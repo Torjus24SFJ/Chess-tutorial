@@ -50,3 +50,9 @@ function createBoard(){
 }
 createBoard();
 
+// Grab every element inside gameboard with class square
+const allSquares = document.querySelectorAll('#gameboard .square')
+
+allSquares.forEach((square) => {
+    square.addEventListener('dragstart', dragStart)
+})
