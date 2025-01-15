@@ -17,9 +17,17 @@
 }
 
 .light {
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(207, 207, 207);
 }
 
 .dark {
     background-color: #a3524e;
+}
+
+.black {
+    fill: black;
+}
+
+.black {
+    fill: white;
 }
