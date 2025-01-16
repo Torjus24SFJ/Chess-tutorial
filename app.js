@@ -122,11 +122,11 @@ function checkIfValid(target) {
     console.log('piece:', piece)
     
     // gets pices with front row index - reverse index between black and white on move //! Very much broken
-    switch(piece){
+    switch(piece) {
         case 'pawn' :
             const starterRow = [8,9,10,11,12,13,14,15]
             if ( 
-                (starterRow.includes(startId) && startId + width * 2 === targetId) ||
+                starterRow.includes(startId) && startId + width * 2 === targetId ||
                 startId + width === targetId ||
                 startId + width - 1 === targetId && document.querySelector(`[square-id=${tartId + width - 1}]`).firstChild ||
                 startId + width + 1 === targetId && document.querySelector(`[square-id=${tartId + width + 1}]`).firstChild
